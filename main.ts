@@ -12,6 +12,13 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function() {
 
 //the game itself
 function doSomething() {
-    
-    scene.setBackgroundImage(assets.image`fight`)
+    let myBoss = sprites.create(assets.image`boss`, SpriteKind.Enemy)
+    myBoss.setStayInScreen(true)
+    scene.setBackgroundImage(assets.image`fight menu`)
+    myBoss.setPosition(80, 37)
+    let myButton = sprites.create(assets.image`fightbar`, SpriteKind.Player)
+    let myButton1 =sprites.create(assets.image`actbar`, SpriteKind.Player)
+    let myButton2 = sprites.create(assets.image`itembar`, SpriteKind.Player)
+    let myButton3 = sprites.create(assets.image`mercybar`, SpriteKind.Player)
+    //let mySprite = sprites.create(assets.image`player`, SpriteKind.Player)
 }
